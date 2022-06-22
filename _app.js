@@ -1,9 +1,14 @@
 import '../styles/globals.css';
 import React from 'react';
-import login from './pages/login'; // Link
+import Navbar from './navbar';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+// import login from './pages/login'; //
+
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <div>
+      <Component {...pageProps} />
+      <Navbar />
+    </div>
+  );
 }
-
-export default MyApp

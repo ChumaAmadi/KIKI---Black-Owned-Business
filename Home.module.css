@@ -1,22 +1,96 @@
-.img-container {
-  background-image: url("2.png"); /* The image used - important! */
-  background-size: cover;
-  position: relative; /* Needed to position the cutout text in the middle of the image */
-  height: 300px; /* Some height */
+.bgimage {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  object-fit: contain;
+  cursor: pointer;
 }
 
-.text {
-  background-color: white;
-  color: black;
-  font-size: 10vw; /* Responsive font size */
-  font-weight: bold;
-  margin: 0 auto; /* Center the text container */
-  padding: 10px;
-  width: 50%;
-  text-align: center; /* Center text */
-  position: absolute; /* Position text */
-  top: 50%; /* Position text in the middle */
-  left: 50%; /* Position text in the middle */
-  transform: translate(-50%, -50%); /* Position text in the middle */
-  mix-blend-mode: screen; /* This makes the cutout text possible */
+.Trigger {
+  color: rgb(248, 206, 143);
+  font-family: "Gabriola", "Helvetica Neue", Helvetica, Arial;
+  background: rgb(0, 0, 0);
+  top: 0;
+  position: fixed;
+  width: 21%;
+  font-size: 240%;
+  letter-spacing: 4.2px;
+  font-style: italic;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px 1px rgb(247, 244, 244);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.Trigger:hover {
+  background-color: rgba(24, 24, 24, 0.932);
+}
+
+.navbarContent {
+  background-color: black;
+  box-shadow: 1px 1px 2px 1px rgba(247, 245, 245, 0.979);
+  color: rgb(248, 206, 143);
+  cursor: pointer;
+  font-family: "Gabriola", "Helvetica Neue", Helvetica, Arial;
+  top: 0;
+  position: sticky;
+  min-width: 404px;
+  text-align: center;
+  font-size: x-large;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.navbarItem {
+  padding: 5px 10px;
+}
+
+.navbarItem:focus {
+  background-color: rgba(41, 40, 40, 0.911);
+}
+
+.navBox {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: sticky;
+}
+
+.homeContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  border: 1px solid red;
+}
+
+.textBox {
+  justify-content: center;
+  align-items: center; 
+  float: center;
+  display: flex;
+  font-size: 300%;
+  letter-spacing: 9px;
+}
+
+.kikiWhat {
+  color: rgb(248, 206, 143);
+  animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.homeContainer1 {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  display: flex;
+  border: 2px dotted rgb(199, 76, 76);
 }
