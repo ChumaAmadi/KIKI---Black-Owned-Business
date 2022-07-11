@@ -4,17 +4,14 @@
 
 @font-face {
   font-family: 'Null-Family';
-  src: url('/Null-Normal.tff');
 }
 
 html,
 body  {
   margin: 0;
-  font-family: "Gabriola", "Helvetica Neue", Helvetica, Arial;
   background-image: linear-gradient(to left top, #ff4fca, #f960d7,
   #f26fe2, #eb7dec, #e489f5, #dc86f8, #d384fa, #c982fd, #ba72fc,
   #a961fb, #9652fb, #8042fb);
-  height: 100%;
   font-family: "Null-Family";
 }
 

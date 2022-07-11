@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <body>
         <div className={styles.bgImage}>
-        <Link href="/about"><Image src="/4.png" width='890px' height='890px' cursor='pointer' /></Link>
+        <Link href="/home"><Image src="/4.png" width='890px' height='890px' cursor='pointer' /></Link>
         </div>
       </body>
     </div>

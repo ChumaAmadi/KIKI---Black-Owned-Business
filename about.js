@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
+import Header from '../pages/header';
 
-export default function Front() {
+export default function About() {
     return  (
         <div>
             <Head>
@@ -10,6 +11,7 @@ export default function Front() {
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
+            <Header />
             <div className={styles.textBox}>
                 <h1 className={styles.kikiWhat}>WHAT IS KIKI?</h1>
             </div>
@@ -31,9 +33,20 @@ export default function Front() {
                         produced a lacking amount  of safe, online communities for black womxn.
                         Kiki was created to combat this issue and more as the brand 
                         flourishes.
+                    </p>
+                </div>
+                <div className={styles.neneContainer}>
+                    <h1 className={styles.founderText}>
+                    </h1>
+                    <div className={styles.nenePicture} />
+                    <p className={styles.neneDescription}>
+                    Nene Nnodim-Amadi is the founder of KIKI. She is a graduate of Smith College
+                    & a current Master of Science student in Media Ventures. She is
+                    a former contributor on Out Loud With Claudia Jordan on Out Loud
+                    with Claudia Jordan on Fox Soul. Also, Nene has years of experience working in podcasting
+                    and talent relations. She is currently publishing on headblackincharge.substack.com
                 </p>
             </div>
-            <div></div>
         </div>
     );
 }
