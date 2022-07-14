@@ -1,25 +1,24 @@
 import React from 'react';
-import styles from '../styles/Home.module.css';
-import Link from 'next/link';
 import { slide as Menu } from "react-burger-menu";
+import Link from 'next/link';
 
 export default function Navbar()    {
   return (
     // Pass on our props
     <Menu>
-      <Link className={styles.menuItem} href="/home">
+      <Link className='menu-item' href="/home">
         Home
       </Link>
 
-      <Link className={styles.menuItem} href="/articles">
+      <Link className='menu-item' href="/articles">
         Articles
       </Link>
 
-      <Link className={styles.menuItem} href="/about">
+      <Link className='menu-item' href="/about">
         About
       </Link>
 
-      <Link className={styles.menuItem} href="/contact">
+      <Link className='menu-item' href="/contact">
         Contact
       </Link>
     </Menu>

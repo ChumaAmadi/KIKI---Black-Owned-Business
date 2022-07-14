@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
-import Header from '../pages/header';
+import Navbar from './sidenav';
 import Link from 'next/Link';
 
 const Pop = () => {
@@ -11,19 +11,23 @@ const Pop = () => {
 export default function Contact() {
     return  (
         <div>
-            <Header />
             <Head>
                 <title>Contact Us</title>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
+            <Navbar />
+            <div className={styles.bigHeader}>
+                <h1 className={styles.bigText6}>Contact</h1>
+            </div>
+            <Link href='/'><div className={styles.kikiHomeLogo2} /></Link>
             <div className={styles.contactContainer}>
                 <div className={styles.contact}>
                     <form><h1 className={styles.formText}>Name:</h1>
                 <br />
                     <input className={styles.textbox} type="text" size='20' />
                 <br />
-                    <h1 className={styles.formText}>What's The Issue?</h1>
+                    <h1 className={styles.formText}>Need Support?</h1>
                 <br />
                     <input className={styles.textbox2} type="email" size='20' />
                 <br />

@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
-import Header from '../pages/header';
+import Navbar from './sidenav';
+import Link from 'next/link';
 
 export default function About() {
     return  (
@@ -11,7 +12,11 @@ export default function About() {
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <Header />
+            <Navbar />
+            <div className={styles.bigHeader}>
+                <h1 className={styles.bigText5}>About</h1>
+            </div>
+            <Link href='/'><div className={styles.kikiHomeLogo2} /></Link>
             <div className={styles.textBox}>
                 <h1 className={styles.kikiWhat}>WHAT IS KIKI?</h1>
             </div>
